@@ -112,14 +112,16 @@ const checkEmpty = () => {
       {((todos.every(item => item.isCompleted) && !showFinished) || todos.length === 0)  && <div className='text-xl flex flex-col font-mono font-thin justify-center items-center text-violet-500 italic h-auto '><p>Wohoo!!!Nothing to do...</p></div>}
     <div className='flex flex-col'>
         {todos.map(item => {
-        return (showFinished || !item.isCompleted) && <div key={item.id} className='todos flex flex-row justify-between items-center mx-4 my-1  px-3 py-2 rounded-md hover:shadow-md'>
-          <div className="flex flex-row justify-center items-center gap-2">
+        return (showFinished || !item.isCompleted) && <div key={item.id} className='todos flex flex-row justify-between items-center mx-4 my-1 w-auto  px-3 py-2 rounded-md hover:shadow-md'>
+          <div className="flex flex-row justify-center items-center gap-2 w-1/2 ">
             <div className="checkbox">
               <input type="checkbox" checked={item.isCompleted} name={item.id} onChange={handleCheckbox} id="" />
             </div>
-       <div className={item.isCompleted?"line-through ":""}>
+      <div className="overflow-auto w-full" style={{scrollbarWidth: "none"}}>
+         <div className={item.isCompleted?"line-through ":""} >
         {item.todo}
        </div>
+      </div>
           </div>
        <div className="buttons flex gap-2">
     <button onClick={(e) => {handleEdit(e,item.id)}} className='bg-violet-500 hover:bg-violet-600 py-1 px-2 text-white rounded-md text-sm font-bold ' ><FaEdit />
