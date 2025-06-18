@@ -92,7 +92,7 @@ const checkEmpty = () => {
   return (
     <>
       <Navbar />
-     <div className="md:container md:mx-auto my-1 md:my-5 bg-violet-200 p-5 rounded-lg shadow-lg min-h-[80vh] md:w-1/2"> 
+     <div className="md:container md:mx-auto my-1 md:my-5 min-h-[100vh] bg-violet-200 p-5 rounded-lg shadow-lg md:min-h-[80vh] md:w-1/2"> 
        <div className="addTodo flex flex-col items-center justify-center text-violet-600 ">
         <h1 className='text-2xl md:text-xl md:font-bold font-extrabold text-violet-800 font-serif mb-6 italic underline'>Todox-Your Task Planner</h1>
        <div className='mb-4 w-full'>
