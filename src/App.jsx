@@ -83,7 +83,7 @@ const checkEmpty = () => {
     saveToLocalStorage(newTodos);
   }
   const toggleFinish = (e) => {
-    setShowFinished(!   showFinished);
+    setShowFinished(!showFinished);
   }
    
    
