@@ -107,7 +107,7 @@ else{
                 <p className="text-sm text-gray-500 mb-6">Your Task Planner</p>
             </div>
        <div className='mb-4 w-full'>
-        <h2 className='text-lg font-bold text-start mx-2  text-indigo-800 mb-2'>Add a Todo</h2>
+        <h2 className='text-xl font-semibold text-start mx-2  text-indigo-800 mb-2'>Add a Todo</h2>
        </div>
        <div className="input flex flex-row items-center justify-center mx-6 mb-4 w-full gap-1">
         <input type="text" onChange={handleChange} value={todo} className='rounded-full border border-1 border-violet-600 w-full p-1'/>
@@ -121,7 +121,7 @@ else{
         <button onClick={handleClear} className='text-indigo-600 hover:text-indigo-600   text-sm font-bold mx-2'>Clear All</button>
       </div>
       <div className='h-[1px] bg-violet-800 opacity-15 my-4'></div>
-      <h2 className='text-lg font-bold YourTodos  my-3 mx-2   text-indigo-800 mb-2'>Your Todos</h2>
+      <h2 className='text-xl font-semibold YourTodos  my-3 mx-2   text-indigo-800 mb-2'>Your Todos</h2>
      
       {((todos.every(item => item.isCompleted) && !showFinished) || todos.length === 0)  && <div className='text-xl flex flex-col font-mono font-thin justify-center items-center  text-indigo-800 italic h-auto '><p>Wohoo!!!Nothing to do...</p></div>}
     <div className='flex flex-col'>

@@ -45,22 +45,22 @@ function More() {
                 <div className="text-sm text-gray-700 space-y-2">
                     <div className="flex items-center gap-2">
                         <span className="font-medium">📧 Email:</span>
-                        <a href="mailto:connectmuhiudin@gmail.com" className="text-indigo-700 hover:underline">connectmuhiudin@gmail.com</a>
+                        <a href="mailto:connectmuhiudin@gmail.com" target="_blank"  className="text-indigo-700 hover:underline">connectmuhiudin@gmail.com</a>
                     </div>
 
                     <div className="flex items-center gap-2">
                         <span className="font-medium">💼 LinkedIn:</span>
-                        <a href="https://www.linkedin.com/in/muhiu-din/" className="text-indigo-700 hover:underline">muhiu_din</a>
+                        <a href="https://www.linkedin.com/in/muhiu-din/" target="_blank"  className="text-indigo-700 hover:underline">muhiu_din</a>
                     </div>
 
                     <div className="flex items-center gap-2">
                         <span className="font-medium">💻 GitHub:</span>
-                        <a href="https://github.com/muhiu-din" className="text-indigo-700 hover:underline">muhiu-din</a>
+                        <a href="https://github.com/muhiu-din" target="_blank"  className="text-indigo-700 hover:underline">muhiu-din</a>
                     </div>
 
                     <div className="flex items-center gap-2">
                         <span className="font-medium">📱 WhatsApp:</span>
-                        <a href="https://wa.me/923394199501" className="text-indigo-700 hover:underline">+92 339 4199501</a>
+                        <a href="https://wa.me/923394199501" target="_blank"  className="text-indigo-700 hover:underline">+92 339 4199501</a>
                     </div>
                 </div>
             </section>
