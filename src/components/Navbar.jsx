@@ -1,4 +1,5 @@
-import React from 'react'
+import { NavLink } from "react-router-dom"
+
 
 const Navbar = () => {
   return (
@@ -6,9 +7,9 @@ const Navbar = () => {
     <div className="logo h-auto mx-8 ">
        <img src="images/todox-icon.png" alt="logo" className="w-20  " />
     </div>
-    <ul className='flex gap-6 mx-8'>
-        <li className='cursor-pointer font-semibold hover:font-bold transition-all duration-400  flex justify-center'>Your Tasks</li>
-        <li className='cursor-pointer font-semibold hover:font-bold transition-all duration-400 w-[3vw] flex justify-center'>More</li>
+    <ul className='flex gap-6 mx-8 cursor-pointer font-semibold  transition-all duration-400 w-auto  justify-center'>
+       <NavLink to="/" className={({ isActive }) => (isActive ? "font-bold underline" : "")} >Your Tasks</NavLink>
+        <NavLink to="/more" className={({ isActive }) => (isActive ? "font-bold underline" : "")} >More</NavLink>
     </ul>
     </nav>
   )
