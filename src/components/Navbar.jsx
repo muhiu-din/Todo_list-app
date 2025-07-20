@@ -16,7 +16,7 @@ const Navbar = () => {
     <ul className='flex flex-row items-center gap-6 mx-8 cursor-pointer font-semibold  transition-all duration-400 w-auto  justify-center'>
        <NavLink to="/todox" className={({ isActive }) => (isActive ? "font-bold underline" : "")} >Your Tasks</NavLink>
         <NavLink to="/more" className={({ isActive }) => (isActive ? "font-bold underline" : "")} >More</NavLink>
-        <NavLink onClick={() => clearLocalStorage()} to="/Todo_list-app" className={({ isActive }) => (isActive ? "font-bold underline" : "")} ><span className="text-xl">📤</span></NavLink>
+        <NavLink onClick={() => clearLocalStorage()} to="/Todo_list-app" className={({ isActive }) => (isActive ? "font-bold underline" : "")} ><span className="text-xl">👋</span></NavLink>
     </ul>
     </nav>
   )
