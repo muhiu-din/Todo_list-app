@@ -1,6 +1,9 @@
 function More() {
     return (
-        <div className="md:container md:mx-auto my-1 md:my-5 min-h-[100vh] md:min-h-[80vh] md:w-1/2 bg-violet-200 p-6 rounded-xl shadow-2xl border border-gray-200">
+        <body className=" bg-violet-200">
+            
+        
+        <div className="md:container md:mx-auto my-1 md:my-5 min-h-[100vh] md:min-h-[80vh] md:w-1/2 bg-white p-6 rounded-xl shadow-2xl border border-gray-200">
             <div className="flex flex-col items-center text-indigo-700">
                 <h1 className="text-3xl font-bold font-serif mb-2 italic">Todox</h1>
                 <p className="text-sm text-gray-500 mb-6">Your Task Planner</p>
@@ -65,6 +68,7 @@ function More() {
                 </div>
             </section>
         </div>
+        </body>
     );
 }
 
